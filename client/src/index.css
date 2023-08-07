@@ -16,6 +16,16 @@ body {
   margin: 1rem auto;
 }
 
+.movie-list a {
+  text-decoration: none;
+  color: black;
+}
+.saved-list a {
+  text-decoration: none;
+  background-color: aqua;
+  color: black;
+}
+
 .movie-director {
   padding: 4px 0;
   font-size: 0.8rem;
