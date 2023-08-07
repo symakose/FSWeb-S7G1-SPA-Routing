@@ -23,7 +23,8 @@ export default function Film(props) {
       });
     // Bu effect her `id ` değiştiğinde çalışmalı
     // Bunu nasıl gerçekleştirebiliriz?
-  }, []);
+    // şu an didMount yapılıyor, [] içerisine değişken id verilirse, id değeri her değiştiğinde render edilir.
+  }, [id]);
 
   // Yalnızca esnek görevlere geçtiğinizde burdaki yorum etiketini kaldırın
   // const filmiKaydet = evt => { }
