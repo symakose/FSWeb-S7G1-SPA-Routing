@@ -29,6 +29,16 @@ export default function App() {
 
   const KaydedilenlerListesineEkle = (id) => {
     // Burası esnek. Aynı filmin birden fazla kez "saved" e eklenmesini engelleyin
+    if (saved.includes(id)) {
+      console.log("Bu film Kaydedilenler Listesi'nde mevcut.");
+      return;
+    }
+
+    const guncelListe = [...saved, id];
+    setSaved(guncelListe);
+    console.log("Yeni Film Kaydedildi:", id);
+
+    KaydedilenlerListesineEkle();
   };
 
   return (
